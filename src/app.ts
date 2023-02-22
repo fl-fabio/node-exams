@@ -19,6 +19,7 @@ const maxBodyLength = () : number => {
     return Math.max(...length);
 }
 
+/*function to check post with most body length*/
 const findPostByBodyLength = () => {
     return posts.find(({body}) => body.length === maxBodyLength() );
 }
